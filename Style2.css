@@ -1,0 +1,36 @@
+body {
+    background-image: url('Walpaper.webp');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    height: 100vh;
+    color: #333; 
+    max-width: 60%;
+    margin: auto;
+    margin-top: 90px;
+    margin-bottom: 90px;
+}
+.form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+     
+}
+.content {
+    min-height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    padding: 20px; 
+}
+.text-white {
+    color: white; 
+}
+table {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px; 
+    padding: 20px;
+}
+  

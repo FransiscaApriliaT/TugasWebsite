@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Registration Form</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="Style2.css"> <!-- Link to your CSS file -->
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Menu</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('registration')">Registrasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSection('summary')">Rangkuman</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="content" id="registration">
+      <div class="form-container">
+        <h2 class="text-center mb-4">Registrasi</h2>
+        <form>
+          <div class="mb-3">
+            <label for="first-name" class="form-label">Nama Depan:</label>
+            <input type="text" class="form-control" id="first-name" placeholder="Nama Depan" required>
+          </div>
+          <div class="mb-3">
+            <label for="last-name" class="form-label">Nama Belakang:</label>
+            <input type="text" class="form-control" id="last-name" placeholder="Nama Belakang" required>
+          </div>
+          <div class="mb-3">
+            <label for="address" class="form-label">Alamat:</label>
+            <input type="text" class="form-control" id="address" placeholder="Alamat" required>
+          </div>
+          <div class="mb-3">
+            <label for="birth-date" class="form-label">Tanggal Lahir:</label>
+            <input type="date" class="form-control" id="birth-date" required>
+          </div>
+          <fieldset class="mb-3">
+            <legend class="col-form-label">Jenis Kelamin:</legend>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="gender" id="optionsRadios1" value="male" checked>
+              <label class="form-check-label" for="optionsRadios1">Laki-laki</label>
+            </div>
+            <div class="form-check">
+              <input type="radio" class="form-check-input" name="gender" id="optionsRadios2" value="female">
+              <label class="form-check-label" for="optionsRadios2">Perempuan</label>
+            </div>
+          </fieldset>
+          <div class="mb-3">
+            <label for="username" class="form-label">Username:</label>
+            <input type="email" class="form-control" id="username" placeholder="Username" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="password" placeholder="Password" required>
+          </div>
+          <div class="mb-3">
+            <label for="photo" class="form-label">Browse Foto:</label>
+            <input type="file" class="form-control" id="photo" accept="image/*">
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember-me">
+            <label class="form-check-label" for="remember-me">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Registrasi</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="text-white" id="summary" style="display: none;">
+      <h2>RANGKUMAN</h2>
+      <p>HTML merupakan sebuah bahasa markup yang digunakan untuk membuat sebuah 
+      halaman web dan menampilkan berbagai informasi di dalam 
+      sebuah browser. HTML saat ini merupakan standar Internet yang didefinisikan dan 
+      dikendalikan penggunaannya oleh World Wide Web Consortium 
+      (W3C).</p>
+      <p>Sejarah HTML dimulai dari HTML 2.0 (RFC1866) disetujui sebagai standard pada 22 September 1995, HTML 3.2 pada
+      14 Januari 1996, HTML 4.0 pada 18 Desember 1997, ISO/IEC 15445:2000 “ISO HTML”
+      berdasar pada HTML 4.01 Strict → 15 Mei 2000 XHTML 1.0 → gabungan HTML & XML 24 Januari 2000, XHTML 1.1 pada 16 February 2007.</p>
+      <hr>
+      <h3>Ciri – ciri Dokumen HTML</h3>
+      <ul>
+        <li>Ekstensi file berupa .htm atau .html</li>
+        <li>Non case sensitive.</li>
+        <li>Terdiri atas tag - tag pembuka dan penutup (walaupun ada beberapa tag yang tidak memiliki penutup).</li>
+        <li>Tag - tag saling berpasangan & bersarang.</li>
+      </ul>
+      <hr>
+      <h3>Struktur HTML</h3>
+      <ul>
+        <li>Document Information: <code>&lt;html&gt;&lt;/html&gt;</code></li>
+        <li>Document Header: <code>&lt;head&gt;&lt;/head&gt;</code></li>
+        <li>Document Body: <code>&lt;body&gt;&lt;/body&gt;</code></li>
+      </ul>
+      <hr>
+      <h3>Document Header</h3>
+      <ul>
+        <li>Page Title: <code>&lt;title&gt;&lt;/title&gt;</code></li>
+        <li>Scripting: <code>&lt;script&gt;&lt;/script&gt;</code></li>
+        <li>Style: <code>&lt;style&gt;&lt;/style&gt;</code></li>
+        <li>Meta: <code>&lt;meta&gt;&lt;/meta&gt;</code></li>
+      </ul>
+      <hr>
+      <h2>Tag HTML Dasar</h2>
+      <h3>Tag Heading</h3>
+      <p>Tag heading digunakan untuk menuliskan judul dan sub-judul. Contoh:</p>
+      <pre>&lt;h1&gt;Judul Utama&lt;/h1&gt;</pre>
+      <hr>
+      <h3>Tag Paragraf, HR, dan BR</h3>
+      <ul>
+        <li><code>&lt;p&gt;</code>: Membuat paragraf baru</li>
+        <li><code>&lt;br /&gt;</code>: Break-line, berpindah ke baris selanjutnya</li>
+        <li><code>&lt;hr /&gt;</code>: Horizontal-line, menambahkan garis horizontal</li>
+      </ul>
+      <hr>
+      <h3>Tag Font</h3>
+      <p>Tag ini digunakan untuk mengatur font (jenis, ukuran, warna) pada halaman web. Contoh:</p>
+      <pre>&lt;font color="blue" size="7" face="Arial"&gt;Contoh Text&lt;/font&gt;</pre>
+      <hr>
+      <h3>Tag Gambar</h3>
+      <p>Tag <code>&lt;img&gt;</code> digunakan untuk menyisipkan gambar. Contoh:</p>
+      <pre>&lt;img src="logo.jpg" width="100" height="100" alt="Logo" /&gt;</pre>
+      <hr>
+      <h3>Tag Anchor/Hyperlink</h3>
+      <p>Tag <code>&lt;a&gt;</code> digunakan untuk membuat hyperlink ke halaman lain. Contoh:</p>
+      <pre>&lt;a href="http://example.com"&gt;Kunjungi Website&lt;/a&gt;</pre>
+      <hr>
+      <h3>Tag Komentar</h3>
+      <p>Tag komentar digunakan untuk memberikan catatan yang tidak akan tampil di browser. Contoh:</p>
+      <pre>&lt;!-- Ini adalah komentar --&gt;</pre>
+    </div>
+
+    <script>
+      function showSection(section) {
+        document.getElementById('registration').style.display = 'none';
+        document.getElementById('summary').style.display = 'none';
+        
+        if (section === 'registration') {
+          document.getElementById('registration').style.display = 'block';
+        } else if (section === 'summary') {
+          document.getElementById('summary').style.display = 'block';
+        }
+      }
+      
+      // Show the registration section by default
+      showSection('registration');
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>

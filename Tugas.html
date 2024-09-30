@@ -1,0 +1,146 @@
+<!DOSTYPE html>
+<html lang=""en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Complitable" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Tugas HTML</title>
+        <link rel="stylesheet" href="style.css"
+    </head>
+    <body>
+        
+        <form action="#" method="post">
+            <table>
+            <h1>Form Registrasi</h1>
+            
+                <tr>
+                    <td><label for="first-name">Nama Depan:</label></td>
+                    <td><input type="text" id="first-name" name="first-name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="last-name">Nama Belakang:</label></td>
+                    <td><input type="text" id="last-name" name="last-name" required></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Alamat:</label></td>
+                    <td><input type="text" id="address" name="address" required></td>
+                </tr>
+                <tr>
+                    <td><label for="birth-date">Tanggal Lahir:</label></td>
+                    <td><input type="date" id="birth-date" name="birth-date" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gender">Jenis Kelamin:</label></td>
+                    <td>
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="female" required>
+                        <label for="female">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="username">Username:</label></td>
+                    <td><input type="text" id="username" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="password">Password:</label></td>
+                    <td><input type="password" id="password" name="password" required></td>
+                </tr>
+                <tr>
+                    <td><label for="photo">Browse Foto:</label></td>
+                    <td><input type="file" id="photo" name="photo" accept="image/*" required></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">Registrasi</button>
+                    </td>
+                </tr>
+                
+
+            </table>
+        </form>
+
+
+        
+        <h2>RANGKUMAN</h2>
+        <P>HTML merupakan sebuah bahasa markup yang digunakan untuk membuat sebuah 
+    halaman web dan menampilkan berbagai informasi di dalam 
+    sebuah browser. HTML saat ini merupakan standar Internet yang didefinisikan dan 
+    dikendalikan penggunaannya oleh World Wide Web Consortium 
+    (W3C).</P>
+        
+        <P>Sejarah HTML dimulai dari HTML 2.0 (RFC1866) disetujui sebagaistandard pada 22 September 1995, HTML 3.2 pada
+    14 Januari 1996, HTML 4.0 pada 18 Desember 1997, ISO/IEC 15445:2000 “ISO HTML”
+    berdasar padaHTML 4.01 Strict → 15 Mei 2000 XHTML 1.0 → gabungan HTML & XML 24 Januari 2000, XHTML 1.1 pada 16 February 2007.</P>
+       <hr>
+        <h3>Ciri – ciri Dokumen HTML</h3>
+    <h4>• Ekstensi file berupa .htm atau .html
+    <br />• Non case sensitive.
+    <br />• Terdiri atas tag - tag pembuka dan penutup (walaupun ada beberapa tag 
+    yang tidak memiliki penutup).
+    <br />• Tag - tag saling berpasangan & bersarang.
+    </h4>
+    <hr>
+        <h3>Struktur HTML</h3>
+    <h4>• Document Information
+    <html></html>
+    <br />• Document Header
+    <head></head>
+    <br />• Document Body
+    <body></body> 
+    </h4>
+    <hr>
+        <h3>Document Header</h3>
+    <h4>• Page Title
+    Judul dari halaman web 
+    contoh : <title></title>
+    <br />• Scripting
+    Tempat client‐side script yang disertakan (javascript, 
+    vbscript, jscript)
+    contoh : <script></script>
+    <br />• Style
+    Dipergunakan untuk mengatur bagaimana sebuah halaman web 
+    dengan berbagai komponennya hendak ditampilkan ke dalam 
+    browser
+    contoh : <style></style>
+    <br />• Meta
+    Meta tags, descriptions & keywords untuk mempermudah
+    search engine dalam melakukan indexing.
+    contoh : <meta></meta> 
+    </h4>
+    <hr>
+<h2>Tag HTML Dasar</h2>
+    <h3>Tag Heading</h3>
+    <p>Tag heading digunakan untuk menuliskan judul dan sub-judul. Contoh:</p>
+    <h4><pre>&lt;h1&gt;Judul Utama&lt;/h1&gt;</pre></h4>
+    <hr>
+    <h3>Tag Paragraf, HR, dan BR</h3>
+    <ul><h4>
+        <li><code>&lt;p&gt;</code>: Membuat paragraf baru</li>
+        <li><code>&lt;br /&gt;</code>: Break-line, berpindah ke baris selanjutnya</li>
+        <li><code>&lt;hr /&gt;</code>: Horizontal-line, menambahkan garis horizontal</li>
+        </h4>
+    </ul>
+    <hr>
+    <h3>Tag Font</h3>
+    <p>Tag ini digunakan untuk mengatur font (jenis, ukuran, warna) pada halaman web. Contoh:</p>
+    <h4><pre>&lt;font color="blue" size="7" face="Arial"&gt;Contoh Text&lt;/font&gt;</pre></h4>
+    <hr>
+    <h3>Tag Gambar</h3>
+    <p>Tag <code>&lt;img&gt;</code> digunakan untuk menyisipkan gambar. Contoh:</p>
+    <h4><pre>&lt;img src="logo.jpg" width="100" height="100" alt="Logo" /&gt;</pre></h4>
+    <hr>
+    <h3>Tag Anchor/Hyperlink</h3>
+    <p>Tag <code>&lt;a&gt;</code> digunakan untuk membuat hyperlink ke halaman lain. Contoh:</p>
+    <h4><pre>&lt;a href="http://example.com"&gt;Kunjungi Website&lt;/a&gt;</pre></h4>
+    <hr>
+    <h3>Tag Komentar</h3>
+    <p>Tag komentar digunakan untuk memberikan catatan yang tidak akan tampil di browser. Contoh:</p>
+    <h4><pre>&lt;!-- Ini adalah komentar --&gt;</pre></h4>
+    <hr>
+
+
+
+    </body>
+</html>
